@@ -34,8 +34,8 @@ function menuClick() {
 	} else if (document.attachEvent && icon !== null) {
 		icon.attachEvent('onclick', toggle);
 	} else {
-		return;
-	}
+
+    }
 }
 
 menuClick();
