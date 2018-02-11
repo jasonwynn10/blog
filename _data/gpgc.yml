@@ -1,9 +1,9 @@
 repo_owner: jasonwynn10
 repo_name: blog
 disabled: false
-use_show_action: false
-label_name: Post Comments
-label_color: 666666
+use_show_action: true
+label_name: Comments
+label_color: 008A3C
 github_application:
   client_id: 3200d5828beead4ea4d9
   code_authenticator: 95c7fc662dfda71d57abb9a8bae7189f2e2c70e0
