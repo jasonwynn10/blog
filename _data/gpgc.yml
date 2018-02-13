@@ -8,4 +8,4 @@ github_application:
   client_id: 3200d5828beead4ea4d9
   code_authenticator: 95c7fc662dfda71d57abb9a8bae7189f2e2c70e0
   callback_url: http://jasonwynn10.github.io/blog/public/html/gpgc_redirect/index.html
-enable_diagnostics: true
+enable_diagnostics: false
