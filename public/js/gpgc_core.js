@@ -125,8 +125,8 @@ function updateCommentFormMode(newMode, reset) {
     WriteButton.classList.remove("selected");
     PreviewButton.onclick = null;
     PreviewButton.classList.add("selected");
-    //elementsToHide.push(WriteDiv);
-    //elementsToShow.push(PreviewDiv);
+    elementsToHide.push(WriteDiv);
+    elementsToShow.push(PreviewDiv);
     PreviewDiv.innerHTML = "";
     renderMarkdown(CommentMarkdown.value);
   } else if (newMode === WriteMode) {
@@ -134,8 +134,8 @@ function updateCommentFormMode(newMode, reset) {
     WriteButton.classList.add("selected");
     PreviewButton.onclick = function () { updateCommentFormMode(PreviewMode, /* reset: */ false); };
     PreviewButton.classList.remove("selected");
-    //elementsToShow.push(WriteDiv);
-    //elementsToHide.push(PreviewDiv);
+    elementsToShow.push(WriteDiv);
+    elementsToHide.push(PreviewDiv);
   }
 
   updateElements(elementsToShow, elementsToHide, /* elementsToEnable: */ null, /* elementsToDisable: */ null);
